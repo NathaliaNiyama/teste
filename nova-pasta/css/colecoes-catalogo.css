@@ -1,0 +1,241 @@
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1800px;
+    width: 100%;
+    font-family: "Abel", sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1800px;
+    width: 100%;
+    font-family: "Abel", sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 350px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #fff;
+}
+
+.card-produto img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card-produto h3 {
+    margin: 0px 0 0px;
+    font-size: 16px;
+    text-align: center;
+    color: #6b6161;
+    font-weight: 550;
+}
+
+.card-produto p {
+    margin: 5px 0;
+    font-size: 14.5px;
+    color: black;
+}
+
+.novidade-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.colecao-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+}
+
+.cores {
+    display: flex;
+    gap: 5px;
+}
+
+.cor-bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.preco-cores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+}
+
+.produtos.justify-left {
+    justify-content: flex-start;
+}
+
+.espaco-flex {
+    flex-grow: 9999;
+    width: 0;
+    height: 0;
+}
+
+/* Botão Ver Mais */
+.ver-mais-container {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#ver-mais {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ver-mais:hover {
+    background-color: rgba(163, 163, 163, 0.226);
+}
+
+#ver-mais img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+#ver-mais img.aberta {
+    transform: rotate(180deg);
+}
+
+.ver-mais-container p {
+    color: black;
+}
+
+.veja-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.veja-mais a {
+    color: #175a66;
+    text-decoration: none;
+}
+
+.veja-mais a:hover {
+    color: #175a66;
+    font-weight: bold;
+}
+
+/*SEGUNDA PARTE*/
+
+.catalogo-colecoes-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    color: #6b6161;
+    font-weight: 50;
+}
+
+.catalogo-colecoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.colecoes-title {
+    margin-top: 37px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.colecoes-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.colecoes-title img {
+    width: 90px;
+}
+
+.catalogo-colecoes-container hr {
+    height: 2.5px;
+    width: 100%;
+    background-color: #0e2523;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+/*SOBRE*/
+.sobre-container {
+    margin-top: 10px;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-text {
+    width: 50%;
+}
+
+.sobre-text h1 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.sobre-img {
+    margin-top: 50px;
+    width: 40%;
+    position: relative;
+    /* Essencial para sobrepor o texto */
+    height: 400px;
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-img {
+    font-size: 15px;
+    color: #0e2523;
+}

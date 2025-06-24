@@ -1,0 +1,131 @@
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1800px;
+    width: 100%;
+    font-family: "Abel", sans-serif;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 350px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #fff;
+}
+
+.produto-card img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.produto-card h3 {
+    margin: 5px 0 1px;
+    font-size: 17px;
+    text-align: center;
+    color: #6b6161;
+    font-weight: 550;
+}
+
+.produto-card p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.produtos.justify-left {
+    justify-content: flex-start;
+}
+
+.espaco-flex {
+    flex-grow: 9999;
+    width: 0;
+    height: 0;
+  }
+
+.cores {
+    display: flex;
+    gap: 5px;
+    /* margin: 5px 0; */
+}
+
+.cor-bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.preco-cores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px 0;
+}
+
+/*Botao ver mais*/
+.ver-mais-container {
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#ver-mais {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ver-mais:hover {
+    background-color: rgba(163, 163, 163, 0.226);
+}
+
+#ver-mais img {
+    width: 40px;
+}
+
+#ver-mais img{
+    transition: transform 0.3s;
+}
+
+#ver-mais img.aberta{
+    transform: rotate(180deg);
+}
+
+.ver-mais-container p {
+    color: black;
+}
+
+.veja-mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 10px; */
+}
+
+.veja-mais a {
+    color: #175a66;
+    text-decoration: none;
+}
+
+.veja-mais a:hover {
+    color: #175a66;
+    font-weight: bold;
+}

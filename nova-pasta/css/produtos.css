@@ -1,0 +1,27 @@
+.colecoes-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.colecoes-title p {
+    margin-top: 30px;
+}
+
+.colecoes-title a {
+    color: #6b6161;
+}
+
+.colecoes-title span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.colecoes-title h1 {
+    margin-top: 0;
+}
+
+.catalogo-colecoes-container hr {
+    margin-top: 8px;
+}
