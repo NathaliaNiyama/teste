@@ -11,10 +11,10 @@
       "material": "Viscose",
       "categoria": "vestido",
       "imagens": [
-        "../img/vestido-saida-de-praia-branca.png",
-        "../img/vestido-saida-de-praia-branca.png",
-        "../img/vestido-saida-de-praia-branca.png",
-        "../img/vestido-saida-de-praia-branca.png"
+        "./img/vestido-saida-de-praia-branca.png",
+        "./img/vestido-saida-de-praia-branca.png",
+        "./img/vestido-saida-de-praia-branca.png",
+        "./img/vestido-saida-de-praia-branca.png"
       ],
       "disponivel": true,
       "novidade": true,
