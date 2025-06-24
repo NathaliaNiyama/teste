@@ -29,7 +29,7 @@
       "cores": ["#FFA500", "#00BFFF"],
       "material": "Poliéster",
       "categoria": "kimono",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "floral-atlantico"
@@ -43,7 +43,7 @@
       "cores": ["#FFFFFF", "#00BFFF"],
       "material": "Algodão",
       "categoria": "camiseta",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -57,7 +57,7 @@
       "cores": ["#FF69B4", "#32CD32", "#00BFFF"],
       "material": "Viscose",
       "categoria": "canga",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "perola-salgada"
@@ -71,7 +71,7 @@
       "cores": ["#DC143C", "#191970"],
       "material": "Poliéster",
       "categoria": "short",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "nenhuma"
@@ -85,7 +85,7 @@
       "cores": ["#9370DB", "#FF69B4"],
       "material": "Viscose",
       "categoria": "saia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -99,7 +99,7 @@
       "cores": ["#191970", "#FF4500"],
       "material": "Poliamida",
       "categoria": "maio",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "floral-atlantico"
@@ -113,7 +113,7 @@
       "cores": ["#00CED1", "#FF1493"],
       "material": "Poliamida",
       "categoria": "biquini",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "mare-serena"
@@ -127,7 +127,7 @@
       "cores": ["#F5DEB3", "#696969"],
       "material": "Borracha",
       "categoria": "sandalia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "perola-salgada"
@@ -141,7 +141,7 @@
       "cores": ["#DEB887"],
       "material": "Palha",
       "categoria": "bolsa",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "nenhuma"
@@ -155,7 +155,7 @@
       "cores": ["#00CED1", "#FF1493"],
       "material": "Poliamida",
       "categoria": "biquini",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "mare-serena"
@@ -169,7 +169,7 @@
       "cores": ["#00CED1", "#FF1493"],
       "material": "Poliamida",
       "categoria": "biquini",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "mare-serena"
@@ -183,7 +183,7 @@
       "cores": ["#191970", "#FF4500"],
       "material": "Poliamida",
       "categoria": "maio",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "floral-atlantico"
@@ -197,7 +197,7 @@
       "cores": ["#191970", "#FF4500"],
       "material": "Poliamida",
       "categoria": "maio",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "floral-atlantico"
@@ -211,7 +211,7 @@
       "cores": ["#9370DB", "#FF69B4"],
       "material": "Viscose",
       "categoria": "saia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -225,7 +225,7 @@
       "cores": ["#9370DB", "#FF69B4"],
       "material": "Viscose",
       "categoria": "saia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -239,7 +239,7 @@
       "cores": ["#F5DEB3", "#696969"],
       "material": "Borracha",
       "categoria": "sandalia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "perola-salgada"
@@ -253,7 +253,7 @@
       "cores": ["#F5DEB3", "#696969"],
       "material": "Borracha",
       "categoria": "sandalia",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "perola-salgada"
@@ -267,7 +267,7 @@
       "cores": ["#F5DEB3", "#FFFFFF"],
       "material": "Algodão",
       "categoria": "vestido",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "mare-serena"
@@ -281,7 +281,7 @@
       "cores": ["#FF7F50", "#FF69B4"],
       "material": "Viscose",
       "categoria": "vestido",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "floral-atlantico"
@@ -295,7 +295,7 @@
       "cores": ["#00CED1", "#FFFFFF"],
       "material": "Poliamida",
       "categoria": "vestido",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -309,7 +309,7 @@
       "cores": ["#191970", "#FFFFFF"],
       "material": "Poliamida",
       "categoria": "camiseta",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "ecos-do-mar"
@@ -323,7 +323,7 @@
       "cores": ["#FF69B4", "#00CED1", "#FFFF00"],
       "material": "Algodão",
       "categoria": "camiseta",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "floral-atlantico"
@@ -337,7 +337,7 @@
       "cores": ["#E0FFFF", "#F5DEB3"],
       "material": "Algodão",
       "categoria": "camiseta",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "mare-serena"
@@ -351,7 +351,7 @@
       "cores": ["#F5DEB3"],
       "material": "Crochê",
       "categoria": "sombrinha",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": true,
       "colecao": "perola-salgada"
@@ -365,7 +365,7 @@
       "cores": ["#FF7F50"],
       "material": "Crochê",
       "categoria": "chinelo",
-      "imagens": ["../img/vestido-saida-de-praia-branca.png"],
+      "imagens": ["./img/vestido-saida-de-praia-branca.png"],
       "disponivel": true,
       "novidade": false,
       "colecao": "ecos-do-mar"
