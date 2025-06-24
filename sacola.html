@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sacola</title>
+    <link rel="stylesheet" href="css/sacola.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/filtros.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <a href="index.html" aria-label="Página inicial">
+                    <img src="img/maresia-logo-header.png" alt="Logo da loja" class="logo-foto">
+                </a>
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+                <div class="menu-item">
+                    <a href="colecoes.html" class="colecoes-link">coleções</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">produtos</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Saídas de praia</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=vestido">Vestidos</a></li>
+                            <li><a href="produtos.html?categoria=camiseta">Camisetas</a></li>
+                            <li><a href="produtos.html?categoria=canga">Cangas</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Peças de baixo</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=short">Shorts</a></li>
+                            <li><a href="produtos.html?categoria=saia">Saias</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Trajes de banho</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=biquini">Biquínis</a></li>
+                            <li><a href="produtos.html?categoria=maio">Maiôs</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Calçados</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sandalia">Sandálias</a></li>
+                            <li><a href="produtos.html?categoria=chinelo">Chinelos</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Adereços</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sombrinha">Sombrinhas</a></li>
+                            <li><a href="produtos.html?categoria=bolsa">Bolsas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">sobre a maresia</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="sobre.html">Veja tudo &gt;</a></div>
+                            <br>
+                            <li><a href="sobre.html?secao=nossaHistoria">Nossa história</a></li>
+                            <li><a href="sobre.html?secao=regulamento">Política Maresia</a></li>
+                            <li><a href="sobre.html?secao=freteGratis">Frete grátis</a></li>
+                        </ul>
+
+                        <div class="logo-ul"><img src="img/icon.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="acoes">
+                <a href="perfil.html" aria-label="Entrar na conta">
+                    <img src="img/conta-white.png" alt="Ícone de conta" class="icone-conta">
+                </a>
+                <a href="cadastro.html" class="texto-entrar">entrar</a>
+
+                <!-- Ícone da sacola que abre o menu lateral -->
+                <button onclick="abrirMenu()" aria-label="Abrir menu da sacola">
+                    <img src="img/sacola-de-compras-white.png" alt="Carrinho de compras" class="icone-carrinho">
+                </button>
+            </div>
+
+            <div id="overlay" class="overlay" tabindex="-1"></div>
+
+            <div id="menuLateral" class="menu-lateral" aria-label="Menu lateral da sacola" tabindex="-1">
+                <div class="itens">
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Vestido saída floral</h1>
+                                <p>R$ 159,90</p>
+                                <p class="medida">P</p>
+                                <div class="cor" aria-label="Cor do produto"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button aria-label="Diminuir quantidade">-</button>
+                                <p>1 uni.</p>
+                                <button aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                        <button class="excluir" aria-label="Excluir item">
+                            <img src="img/lixeira-logo.png" alt="Excluir">
+                        </button>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Canga Estampada</h1>
+                                <p>R$ 69,90</p>
+                                <div class="cor2" aria-label="Cor do produto"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button aria-label="Diminuir quantidade">-</button>
+                                <p>1 uni.</p>
+                                <button aria-label="Aumentar quantidade">+</button>
+                            </div>
+                        </div>
+                        <button class="excluir" aria-label="Excluir item">
+                            <img src="img/lixeira-logo.png" alt="Excluir">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="fechar-pedido">
+                    <p>Subtotal: R$ 00,00</p>
+                    <a href="sacola.html">Fechar pedido agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-sacola">
+
+        <div class="lala">
+            <img src="img/sacola-logo.png" alt="Logo da sacola">
+            <h1 class="h1">Sacola</h1>
+        </div>
+        <hr style="height: 3px; background-color:#333; color: #333;">
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="teste">Produto</th>
+                    <th>Entrega</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="produto-info">
+                            <img src="img/vestido-saida-de-praia-branca.png" alt="Produto" />
+                            <div>
+                                <h1>Vestido Saída Floral</h1>
+                                <p>Vestido leve com estampa floral, perfeito para saídas de praia.</p>
+
+                                <div class="detalhes-produto">
+                                    <p class="medida">P</p>
+                                    <div class="cor" aria-label="Cor do produto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="produto-detalhes">7 dias úteis</td>
+                    <td class="produto-detalhes">R$ 159,90</td>
+                    <td>
+                        <div class="quantidade">
+                            <button onclick="alterarQuantidade(this, -1)" aria-label="Diminuir quantidade">-</button>
+                            <span>1</span>
+                            <button onclick="alterarQuantidade(this, 1)" aria-label="Aumentar quantidade">+</button>
+                        </div>
+                    </td>
+                    <td class="produto-detalhes">R$ 159,90</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="produto-info">
+                            <img src="img/vestido-saida-de-praia-branca.png" alt="Produto" />
+                            <div>
+                                <h1>Canga Estampada</h1>
+                                <p>Canga multiuso com estampa tropical vibrante.</p>
+
+                                <div class="detalhes-produto">
+                                    <div class="cor2" aria-label="Cor do produto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="produto-detalhes">7 dias úteis</td>
+                    <td class="produto-detalhes">R$ 69,90</td>
+                    <td>
+                        <div class="quantidade">
+                            <button onclick="alterarQuantidade(this, -1)" aria-label="Diminuir quantidade">-</button>
+                            <span>1</span>
+                            <button onclick="alterarQuantidade(this, 1)" aria-label="Aumentar quantidade">+</button>
+                        </div>
+                    </td>
+                    <td class="produto-detalhes">R$ 69,90</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="conteudo-principal">
+            <div class="inferior">
+                <section class="dados-usuario2">
+                    <h2>Endereços</h2>
+
+                    <!-- <div class="endereco-cadastrado">
+                        <div class="endereco">
+                            <h3>Lagoinha - Ubatuba, SP</h3>
+                            <h2>Rua Califórnia, 173</h2>
+                            <h2>Complemento: </h2>
+                        </div>
+                        <div class="cep">
+                            <h3>CEP: XXXXX-XXX</h3>
+                        </div>
+                        <div class="acoes-endereco">
+                            <button class="editar-endereco">Editar</button>
+                            <button class="deletar-endereco">Excluir</button>
+                        </div>
+                    </div> -->
+
+
+                    <div class="novo-endereço">
+                        <button class="add-endereco" aria-label="Adicionar novo endereço">
+                            <img src="img/icon-mais.png" alt="Adicionar endereço">
+                        </button>
+                    </div>
+
+                    <div class="frete-total">
+                        <p>Total do frete: R$ 00,00</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resumo">
+                <div class="escrita">
+                    <h2>Resumo do pedido</h2>
+                    <h3>Cupom de desconto</h3>
+                </div>
+
+                <div class="cupom">
+                    <div class="campo">
+                        <input placeholder="Digite o código" rows="3" aria-label="Campo para inserir cupom de desconto"></input>
+                    </div>
+
+                    <button>Adicionar</button>
+                </div>
+
+                <div class="valores">
+                    <hr class="pedds">
+                    <p>Subtotal <span>R$ 00,00</span></p>
+                    <hr class="pedds">
+                    <p>Total <span>R$ 00,00</span></p>
+                    <hr class="pedds">
+                </div>
+                <button class="fechar">Fechar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-endereco" id="modalEndereco" role="dialog" aria-modal="true" aria-labelledby="modalEnderecoTitulo">
+        <div class="modal-conteudo">
+            <form action="#" method="post" class="endereco-formulario">
+                <div class="shakira">
+                    <h2 id="modalEnderecoTitulo">Adicionar um novo endereço</h2>
+
+                    <div class="dados-de-endereco">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required>
+                    </div>
+
+                    <div class="dados-de-endereco">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div class="dados-de-endereco estado">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE">Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
+                    </div>
+
+                    <div class="dados-de-endereco">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                    </div>
+
+                    <div class="dados-de-endereco rua">
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" name="rua" required>
+                    </div>
+
+                    <div class="dados-de-endereco num">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+
+                    <div class="dados-de-endereco">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="salvar-endereco">Salvar endereço</button>
+                    <button type="button" id="cancelar-endereco">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalConfirmacao" class="modal-endereco" role="dialog" aria-modal="true" aria-labelledby="modalConfirmacaoTitulo">
+        <div class="modal-conteudo">
+            <h2 id="modalConfirmacaoTitulo">Confirmação do pedido</h2>
+
+            <p id="nome-usuario">Nome do usuário:</p>
+
+            <h3>Escolha o endereço de entrega:</h3>
+            <div id="lista-enderecos" class="lista-enderecos"></div>
+
+            <h3>Forma de pagamento:</h3>
+            <select id="forma-pagamento" required aria-label="Selecione a forma de pagamento">
+                <option value="">Selecione</option>
+                <option value="cartao">Cartão de crédito</option>
+                <option value="pix">PIX</option>
+                <option value="boleto">Boleto</option>
+            </select>
+
+            <h3>Parcelamento:</h3>
+            <select id="parcelas" required aria-label="Selecione o número de parcelas"></select>
+
+            <div class="valor-final">
+                <span id="valor-total">Total: R$ 00,00</span>
+            </div>
+
+            <div class="buttons">
+                <button id="confirmar-pedido">Confirmar pedido</button>
+                <button id="cancelar-pedido">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/sacola.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+
+</html>

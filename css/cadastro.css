@@ -1,0 +1,82 @@
+hr {
+    width: 100%;
+    /* height: 2px; */
+    background-color: #524b4b;
+    color: #524b4b;
+    margin-top: 40px;
+}
+
+.cadastro-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Abel", sans-serif;
+}
+
+.cadastro {
+    width: 1500px;
+    display: flex;
+    gap: 20px;
+}
+
+.cadastro-text {
+    width: 40%;
+}
+
+.cadastro-text h3 {
+    font-size: 30px;
+    font-weight: 100;
+    color: #524b4b;
+}
+
+.cadastro-text p {
+    color: #6b6161;
+    font-size: 16px;
+}
+
+.cadastro-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.cadastro-add input, .cadastro-add button {
+    border-radius: 50px;
+    border: 1px solid #524b4b;
+    color: #989898;
+    padding: 15px 10px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.cadastro-add button {
+    background-color: #524b4b;
+    cursor: pointer;
+}
+
+.cadastro-add button a:hover {
+    color: #b6b4b4;
+}
+
+.cadastro-add a {
+    color: white;
+    text-decoration: none;
+}
+
+.politica-cadastro {
+    width: 1500px;
+}
+
+.politica-cadastro p {
+    color: #989898;
+    font-size: 13px;
+    text-align: left;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.politica-cadastro a {
+    color: #989898;
+}

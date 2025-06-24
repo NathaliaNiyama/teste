@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
+.container-sacola {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Arimo', sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.lala {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.lala h1 {
+  margin-left: 10px;
+}
+
+.lala img {
+  width: 70px;
+}
+
+.h1 {
+  font-family: 'Arimo', sans-serif;
+  color: #444;
+  letter-spacing: 4px;
+  font-size: 30px;
+  align-items: flex-end;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead th {
+  font-size: 18px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+th.teste {
+
+  text-align: left;
+
+}
+
+th {
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #444;
+  font-family: 'Arimo', sans-serif;
+
+}
+
+/* Produto dentro da tabela */
+.produto-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.produto-info img {
+  width: 150px;
+  height: auto;
+}
+
+.produto-info h1 {
+  font-family: 'Arimo', sans-serif;
+  text-align: start;
+  font-weight: 400;
+  color: #444;
+  letter-spacing: 2px;
+  margin: 2px 0 50px 20px;
+  font-size: 17px;
+}
+
+.produto-info p {
+  font-family: 'Arimo', sans-serif;
+  text-align: start;
+  font-weight: 100;
+  color: #444;
+  letter-spacing: 2px;
+  margin: 2px 0 0 20px;
+}
+
+.produto-detalhes {
+  font-size: 16px;
+}
+
+.detalhes-produto {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cor, .cor2 {
+  margin-left: 20px;
+}
+
+/* Controle de quantidade */
+.quantidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantidade button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.inferior {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/*2° Parte*/
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.inferior {
+    width: 50%;
+}
+
+.resumo {
+    width: 50%;
+}
+
+/*Endereço*/
+.dados-usuario2 {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Arimo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dados-usuario2 h2 {
+  font-size: 25px;
+  color: #524b4b;
+  margin-bottom: 30px;
+}
+
+.endereco-cadastrado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.endereco {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.endereco h3 {
+  color: #6b6161;
+  font-weight: 100;
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+
+.endereco h2 {
+  color: #a6a6a6;
+  font-weight: 100;
+  font-size: 17px;
+  margin: 0;
+  line-height: 25px;
+}
+
+.cep h3 {
+  color: #6b6161;
+  font-weight: 100;
+  font-size: 17px;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: end;
+}
+
+.novo-endereço {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-endereco {
+  border: transparent;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.add-endereco img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.add-endereco:hover {
+  background-color: rgba(163, 163, 163, 0.226);
+}
+
+.frete-total p {
+  font-size: 20px;
+  color: #6b6161;
+}
+
+/*Formulário*/
+.modal-endereco {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-conteudo {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  height: 95%;
+}
+
+.shakira h2 {
+  display: flex;
+  justify-content: center;
+  color: #0e2523;
+  font-size: 23px;
+  margin: 0 0 20px;
+}
+
+.shakira h1 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 10px 3px;
+}
+
+.shakira input, #estado {
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 8px;
+}
+
+.buttons button, .button {
+  padding: 10px;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #6b6161;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buttons button:hover, .button:hover {
+  color: #bcbcbc;
+}
+
+.acoes-endereco {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.botoes-endereco {
+  display: flex;
+  gap: 20px;
+}
+
+/*Resumo do pedido*/
+.escrita h2 {
+  margin-top: 50px;
+  color: #524b4b;
+}
+
+/* Cupom */
+.resumo .cupom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.resumo .cupom input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+  background: transparent;
+}
+
+.resumo .cupom button {
+  padding: 5px 10px;
+  background-color: #5c504d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.campo,
+.campo input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fdfdfda6;
+  border: 1px solid black;
+
+}
+
+/* Frete */
+.frete {
+  margin-top: 10px;
+}
+
+/* Cupom de desconto */
+.cupom {
+  text-align: center;
+  /* centraliza texto e placeholder horizontalmente */
+  height: 40px;
+  line-height: 40px;
+  /* centraliza verticalmente */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cupom::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+.cupom button {
+  background-color: #5f5555;
+  color: white;
+  padding: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 48px;
+  border: 1px solid;
+  width: 25%;
+}
+
+.escrita h3 {
+  margin-top: 15px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+
+}
+
+/* Valores do resumo */
+.valores p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+/* Botão fechar */
+.fechar {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #5f5555;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 48px;
+  border: 1px solid;
+}
+
+.pedds {
+  color: #524b4b;
+  margin: 30px 0px;
+
+}
+
+/*Confirmação de pedido*/
+.modal-endereco {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-conteudo h2 {
+    margin-top: 0;
+    color: #0e2523;
+}
+
+#forma-pagamento, #parcelas {
+  width: 100%;
+  height: 40px;
+}
+
+#lista-enderecos {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.valor-final {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*escolher endereço*/
+#lista-enderecos label {
+    display: block;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#lista-enderecos input[type="radio"] {
+    margin-right: 8px;
+}
+
+/*Mensagem vazia*/
+#mensagem-vazia {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: 400;
+}

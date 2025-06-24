@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Maresia</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <link rel="stylesheet" href="css/filtros.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <a href="index.html" aria-label="Página inicial">
+                    <img src="img/maresia-logo-header.png" alt="Logo da loja" class="logo-foto">
+                </a>
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+                <div class="menu-item">
+                    <a href="colecoes.html" class="colecoes-link">Coleções</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Produtos</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Saídas de praia</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=vestido">Vestidos</a></li>
+                            <li><a href="produtos.html?categoria=camiseta">Camisetas</a></li>
+                            <li><a href="produtos.html?categoria=canga">Cangas</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Peças de baixo</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=short">Shorts</a></li>
+                            <li><a href="produtos.html?categoria=saia">Saias</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Trajes de banho</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=biquini">Biquínis</a></li>
+                            <li><a href="produtos.html?categoria=maio">Maiôs</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Calçados</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sandalia">Sandálias</a></li>
+                            <li><a href="produtos.html?categoria=chinelo">Chinelos</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Adereços</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sombrinha">Sombrinhas</a></li>
+                            <li><a href="produtos.html?categoria=bolsa">Bolsas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Sobre a Maresia</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="sobre.html">Veja tudo ></a></div>
+                            <br>
+                            <li><a href="sobre.html?secao=nossaHistoria">Nossa história</a></li>
+                            <li><a href="sobre.html?secao=regulamento">Política Maresia</a></li>
+                            <li><a href="sobre.html?secao=freteGratis">Frete grátis</a></li>
+                        </ul>
+
+                        <div class="logo-ul"><img src="img/icon.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="acoes">
+                <a href="perfil.html" aria-label="Entrar na conta">
+                    <img src="img/conta-white.png" alt="Ícone de conta" class="icone-conta">
+                </a>
+                <a href="cadastro.html" class="texto-entrar">Entrar</a>
+
+                <!-- Ícone da sacola que abre o menu lateral -->
+                <button onclick="abrirMenu()">
+                    <img src="img/sacola-de-compras-white.png" alt="Carrinho de compras" class="icone-carrinho">
+                </button>
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+
+            <div id="menuLateral" class="menu-lateral">
+                <div class="itens">
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Vestido saída floral</h1>
+                                <p>R$ 159,90</p>
+                                <p class="medida">P</p>
+                                <div class="cor"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 uni.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Canga estampada</h1>
+                                <p>R$ 69,90</p>
+                                <div class="cor2"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 uni.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+                </div>
+
+                <div class="fechar-pedido">
+                    <p>Subtotal: R$ 00,00</p>
+                    <a href="sacola.html">Fechar pedido agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            <aside class="menu-lateral">
+                <h2>Seções</h2>
+                <ul>
+                    <ul>
+                        <li><a href="#" onclick="mostrarRegulamento()">Regulamentos</a></li>
+                        <li><a href="#" onclick="showContent('nossaHistoria')">Nossa história</a></li>
+                        <li><a href="#" onclick="showContent('politicaMaresia')">Políticas Maresia</a></li>
+                        <li><a href="#" onclick="showContent('trocasDevolucoes')">Trocas e devoluções</a></li>
+                    </ul>
+                </ul>
+            </aside>
+
+            <div class="menu-simplificado">
+                <span class="menu-colunaa">Seções</span>
+
+                <div class="menu-coluna">
+                    <button onclick="showContent('nossaHistoria')">Nossa história</button>
+                </div>
+
+                <div class="menu-coluna">
+                    <button onclick="toggleMenu(this)">
+                        <span>Políticas Maresia</span>
+                        <img src="/img/seta-baixo.png" class="seta">
+                    </button>
+                    <ul>
+                        <button onclick="showContent('regulamento')">Regulamento</button>
+                        <button onclick="showContent('freteGratis')">Frete grátis</button>
+                        <button onclick="showContent('prazosEntrega')">Prazos e entrega</button>
+                        <button onclick="showContent('formasPagamento')">Formas de pagamento</button>
+                        <button onclick="showContent('pix')">Pix parcelado</button>
+                    </ul>
+                </div>
+
+                <div class="menu-coluna">
+                    <button onclick="toggleMenu(this)">
+                        <span>Coleções</span>
+                        <img src="/img/seta-baixo.png" class="seta">
+                    </button>
+                    <ul>
+                        <button onclick="showContent('colecaoMareSerena')">Coleção Maré Serena</button>
+                        <button onclick="showContent('floralatlântico')">Floral Atlântico</button>
+                        <button onclick="showContent('ecosDoMar')">Ecos do mar</button>
+                        <button onclick="showContent('perolaSalgada')">Pérola salgada</button>
+                    </ul>
+                </div>
+
+                <div class="menu-coluna">
+                    <button onclick="toggleMenu(this)">
+                        <span>Prêmios Maresia</span>
+                        <img src="/img/seta-baixo.png" class="seta">
+                    </button>
+                    <ul>
+                        <button onclick="showContent('melhorMarca')">Melhor marca de roupa</button>
+                        <button onclick="showContent('tecidosLeves')">Tecidos mais leves</button>
+                        <button onclick="showContent('designInovador')">Design mais inovador</button>
+                        <button onclick="showContent('Sustentabilidade')">Sustentabilidade</button>
+                    </ul>
+                </div>
+
+
+                <div class="menu-coluna">
+                    <button onclick="toggleMenu(this)">
+                        <span>Projetos futuros</span>
+                        <img src="/img/seta-baixo.png" class="seta">
+                    </button>
+                    <ul>
+                        <button onclick="showContent('vivaPraia')">Viva praia</button>
+                        <button onclick="showContent('sonhoVerde')">Sonho verde</button>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div id="conteudo-dinamico" class="conteudo-dinamico">
+
+                <section class="regulamento" style="margin-top: 60px; margin-right: 40px; font-size: 15px;">
+                    <h2 class="titulo" style=" font-size: 19px; color: #084550;">Nossa história</h2>
+                    <p><strong>Começo de uma ideia: </strong>Clara sempre teve o mar como inspiração. Nascida e criada
+                        em uma
+                        pequena cidade litorânea, ela cresceu observando como as pessoas se vestiam para aproveitar o
+                        sol, a
+                        areia e as ondas. Mas algo a incomodava: a maioria das roupas praianas era desconfortável, com
+                        tecidos que grudavam no corpo, cores que desbotavam após alguns mergulhos e modelagens que
+                        limitavam
+                        os movimentos.
+                    
+                        Foi em um verão particularmente quente, enquanto ajudava sua avó a costurar cortinas de voal
+                        para
+                        proteger a varanda do sol, que ela teve um insight. Aquele tecido leve, que deixava o vento
+                        passar
+                        mas bloqueava o calor, seria perfeito para roupas de praia.
+                    
+                        "E se eu criasse peças que fossem como uma segunda pele, tão leves quanto a brisa do mar?"
+                    
+                        Com essa ideia na cabeça e algumas economias guardadas, Clara comprou tecidos naturais — linho,
+                        algodão orgânico e malhas respiráveis — e começou a experimentar em sua máquina de costura
+                        caseira.
+                    </p>
+                    <p><strong>Determinação:</strong> Os primeiros meses foram marcados por tentativas, erros e muitas
+                        lições aprendidas. O vestido fluido que Clara imaginou inicialmente, apesar de bonito,
+                        revelou-se
+                        impraticável quando molhado, tornando-se transparente e perdendo seu charme. As camisetas de
+                        algodão, que pareciam uma escolha segura, encolhiam após a primeira lavagem, frustrando suas
+                        expectativas. Já o biquíni, confeccionado com um tecido comum, não mantinha o formato após
+                        alguns
+                        usos, deformando-se e perdendo o caimento perfeito que ela tanto desejava. <br> Determinada a
+                        superar esses obstáculos, Clara mergulhou em pesquisas sobre tecidos tecnológicos e
+                        sustentáveis.
+                        Foi assim que descobriu a microfibra sustentável, um material que secava rapidamente, mantinha
+                        as
+                        cores vivas mesmo após várias lavagens e oferecia o conforto que buscava. Além disso, encontrou
+                        um
+                        linho especial, tratado para resistir ao amarrotamento, perfeito para peças elegantes e
+                        práticas.
+                    </p>
+                    <p><strong>A busca por soluções:</strong> Determinada a superar esses obstáculos, Clara embarcou em
+                        uma
+                        jornada de pesquisa que a levou a feiras têxteis internacionais e a conversas com especialistas
+                        em
+                        materiais. Foi em uma dessas feiras que descobriu a microfibra sustentável, um material
+                        revolucionário que combinava rapidez de secagem com resistência ao cloro e ao sal. O tecido
+                        mantinha
+                        suas cores vibrantes mesmo após intensa exposição solar, algo essencial para roupas praianas.
+                        <br> O
+                        linho especial que encontrou foi outra revelação. Tratado com uma técnica inovadora, mantinha
+                        seu
+                        caimento perfeito sem amarrotar, resolvendo um dos maiores problemas das roupas de verão. Clara
+                        passou semanas testando diferentes combinações de tecidos, até encontrar o equilíbrio perfeito
+                        entre
+                        leveza, durabilidade e estilo.</p>
+                    <p><strong>A consolidação do estilo Maresia:</strong> Com os materiais certos em mãos, Clara pôde
+                        finalmente dar vida à sua visão. O vestido midi tornou-se sua primeira peça de sucesso. As
+                        fendas
+                        laterais, inicialmente uma solução prática para permitir movimento, transformaram-se em uma
+                        assinatura de design, criando um efeito de movimento gracioso que lembrava as ondas do mar.<br>
+                        O
+                        conjunto de biquíni e saída de praia representou um marco na carreira de Clara. A microfibra
+                        sustentável permitiu criar peças que mantinham seu formato perfeito mesmo após uso intenso,
+                        enquanto
+                        o design minimalista destacava a beleza natural do corpo feminino. A aceitação foi imediata -
+                        suas
+                        clientes adoravam a combinação de conforto e elegância. <br> A camisa masculina leve foi a peça
+                        que
+                        consolidou a Maresia como marca completa. Clara trabalhou pessoalmente com um grupo de homens
+                        para
+                        testar diferentes modelos, até chegar a um corte que fosse ao mesmo tempo moderno e atemporal. O
+                        tecido escolhido oferecia proteção UV sem sacrificar a respirabilidade, tornando-se rapidamente
+                        um
+                        item essencial para dias na praia.</p>
+                    <p><strong>O legado que se construía:</strong> Cada peça que Clara criava carregava não apenas sua
+                        expertise técnica, mas também sua filosofia de design. Ela acreditava que roupas praianas
+                        deveriam
+                        ser como uma segunda pele - confortáveis, bonitas e que permitissem total liberdade para
+                        aproveitar
+                        o mar. Seus clientes não compravam apenas produtos, mas uma experiência completa de verão. <br>
+                        O
+                        sucesso da Maresia começou a se espalhar. O boca a boca entre frequentadores de praias levou
+                        suas
+                        criações para outras cidades litorâneas. Revistas de moda começaram a notar o trabalho
+                        meticuloso de
+                        Clara, destacando como suas peças uniam funcionalidade e estilo de maneira única.</p>
+                    <p><strong>Olhando para o futuro:</strong> Hoje, Clara continua em sua busca por inovação. Seu
+                        ateliê,
+                        que começou em um pequeno espaço em sua casa, agora ocupa um amplo galpão à beira-mar, onde uma
+                        equipe dedicada ajuda a dar vida a suas visões. Novos projetos estão sempre em desenvolvimento -
+                        desde tecidos feitos com materiais reciclados até parcerias com comunidades costeiras para
+                        preservar
+                        técnicas artesanais. <br> A história da Maresia é mais do que a trajetória de uma marca de moda.
+                        É a
+                        realização do sonho de uma mulher que acreditou que era possível vestir o espírito do mar em
+                        cada
+                        peça de roupa. Clara provou que, com paixão, persistência e atenção aos detalhes, é possível
+                        criar
+                        algo verdadeiramente especial - roupas que não apenas cobrem o corpo, mas celebram a conexão
+                        entre
+                        as pessoas e o oceano que tanto amamos.</p>
+                    <p><strong>A expansão sustentável: Maresia e o compromisso com o meio ambiente:</strong> Conforme a
+                        Maresia crescia, Clara percebeu que seu sucesso vinha com uma responsabilidade ainda maior: o
+                        impacto ambiental da moda. A indústria têxtil era uma das mais poluentes do mundo, e ela não
+                        queria
+                        que sua marca contribuísse para esse problema. Foi então que decidiu transformar a Maresia em um
+                        exemplo de moda sustentável, indo além dos tecidos funcionais para adotar práticas
+                        ecologicamente
+                        corretas em toda a cadeia produtiva. <br> Clara estabeleceu colaborações com cooperativas de
+                        costureiras em regiões litorâneas, oferecendo treinamento e remuneração justa. Essas parcerias
+                        não
+                        apenas fortaleceram a economia local, mas também reduziram a pegada de carbono da marca, já que
+                        a
+                        produção passou a ser descentralizada e mais próxima dos pontos de venda. Além disso, muitas das
+                        embalagens eram feitas à mão por artesãs, utilizando fibras naturais como sisal e palha.</p>
+                    
+                    <section class="rodape-info">
+                    
+                        <div class="info-contato">
+                            <img src="img/what.png" alt="what">
+                            <p><strong>(12) 33456-7890</strong></p>
+                            <hr class="hr1">
+                            <p class="ha"><strong>Horário de <br> atendimento:</strong></p>
+                        </div>
+                        <div class="ss">
+                            Seg à sex entre 7h até 20h <br>Sáb, dom e feriados entre 10h até 15h
+                        </div>
+                        <hr class="hr3" style="width: px;">
+                    
+                    
+                    
+                        <!-- <section> -->
+                        <div class="cadastro-container">
+                            <div class="cadastro">
+                                <div class="cadastro-text">
+                                    <h3>Cadastre-se</h3>
+                                    <p>Fique por dentro do que rola aqui e ganhe 25% de desconto na primeira compra no APP!</p>
+                                </div>
+                    
+                                <div class="cadastro-add">
+                                    <form>
+                                        <input type="text" placeholder="Nome e sobrenome">
+                                        <input type="email" placeholder="E-mail">
+                                        <button type="submit"><a href="cadastro.html">Cadastrar-se</a></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cadastro-container">
+                            <div class="politica-cadastro cadastro">
+                                <p>Ao se cadastrar na Maresia, você concorda que seus dados pessoais serão tratados para oferecer
+                                    uma experiência personalizada em nossa loja. O cadastro é restrito a maiores de 18 anos. Antes
+                                    de prosseguir, recomendamos que leia nossa <a href="sobre.html?secao=regulamento">Política Maresia</a> para entender
+                                    como suas
+                                    informações são utilizadas e protegidas.</p>
+                            </div>
+                        </div>
+                    </section>
+                    

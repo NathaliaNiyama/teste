@@ -1,0 +1,215 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    gap: 80px;
+}
+
+
+.conteudo {
+    /* flex: 1; */
+    width: 100%;
+}
+
+.menu-simplificado {
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    min-width: 200px;
+}
+
+.menu-colunaa{
+    font-weight: bold;
+    color: #524b4b;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #0e2523;
+    padding: 9px;
+}
+
+.menu-coluna{
+    border-bottom: 1px solid #0e2523;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #6b6161;
+}
+
+.menu-coluna button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-coluna button span {
+    font-weight: 100;
+    color: #6b6161;
+}
+
+.menu-coluna button {
+    color: #6b6161;
+}
+
+.menu-coluna img {
+    width: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-coluna ul {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    display: none;
+}
+
+.ativo {
+    margin-bottom: 0;
+}
+
+.ativo button {
+    font-size: 12.5px;
+    color: #6b6161;
+    font-weight: 100;
+}
+
+.ativo button:hover {
+    font-weight: bold;
+}
+
+.menu-coluna ul.ativo {
+    display: block;
+}
+
+/* .regulamento h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+} */
+
+/* .regulamento p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+} */
+
+.rodape-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    /* margin-top: 0px; */
+    /* border-top: 1px solid #ccc; */
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.info-contato {
+    display: flex;
+    align-items: center;
+}
+/* 
+.cadastro {
+    max-width: 400px;
+}
+
+.cadastro h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cadastro p {
+    font-size: 13px;
+    margin-bottom: 10px;
+} */
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1 1 200px;
+    font-size: 14px;
+} */
+
+/* form button {
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+
+
+.info-contato{
+    display: flex;
+    gap: 30px;
+    padding-right: 10px;
+    /* margin-left: 200px; */
+}
+
+.info-contato img{
+    height: 44px;
+    /* padding-left: 140px; */
+    /* margin-bottom: 10px ; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hr1{
+    height: 60px;
+    width: 1px;
+    margin-left: 10px;
+}
+
+.hr2{
+    margin-top: 25px;
+}
+
+.hr3{
+    width: 97%;
+}
+
+.texto {
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.texto h2{
+    color: #084550;
+    font-size: 19px;
+}
+
+.texto p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.regulamento strong {
+    color: #0e2523;
+}
+
+.regulamento p{
+    margin-top: 30px;
+    line-height: 1.6;
+    margin-right: 20px;
+}

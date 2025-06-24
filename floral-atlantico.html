@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleção - Floral Atlântico</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/filtros.css">
+    <link rel="stylesheet" href="css/colecoes-catalogo.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <a href="index.html" aria-label="Página inicial">
+                    <img src="img/maresia-logo-header.png" alt="Logo da loja" class="logo-foto">
+                </a>
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+                <div class="menu-item">
+                    <a href="colecoes.html" class="colecoes-link">Coleções</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Produtos</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Saídas de praia</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=vestido">Vestidos</a></li>
+                            <li><a href="produtos.html?categoria=camiseta">Camisetas</a></li>
+                            <li><a href="produtos.html?categoria=canga">Cangas</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Peças de baixo</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=short">Shorts</a></li>
+                            <li><a href="produtos.html?categoria=saia">Saias</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Trajes de banho</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=biquini">Biquínis</a></li>
+                            <li><a href="produtos.html?categoria=maio">Maiôs</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Calçados</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sandalia">Sandálias</a></li>
+                            <li><a href="produtos.html?categoria=chinelo">Chinelos</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Adereços</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sombrinha">Sombrinhas</a></li>
+                            <li><a href="produtos.html?categoria=bolsa">Bolsas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Sobre a Maresia</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="sobre.html">Veja tudo ></a></div>
+                            <br>
+                            <li><a href="sobre.html?secao=nossaHistoria">Nossa História</a></li>
+                            <li><a href="sobre.html?secao=regulamento">Política Maresia</a></li>
+                            <li><a href="sobre.html?secao=freteGratis">Frete Grátis</a></li>
+                        </ul>
+
+                        <div class="logo-ul"><img src="img/icon.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="acoes">
+                <a href="perfil.html" aria-label="Entrar na conta">
+                    <img src="img/conta-white.png" alt="Ícone de conta" class="icone-conta">
+                </a>
+                <a href="cadastro.html" class="texto-entrar">Entrar</a>
+
+                <!-- Ícone da sacola que abre o menu lateral -->
+                <button onclick="abrirMenu()">
+                    <img src="img/sacola-de-compras-white.png" alt="Carrinho de compras" class="icone-carrinho">
+                </button>
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+
+            <div id="menuLateral" class="menu-lateral">
+                <div class="itens">
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Vestido Saída Floral</h1>
+                                <p>R$ 159,90</p>
+                                <p class="medida">P</p>
+                                <div class="cor"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 unid.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Canga Estampada</h1>
+                                <p>R$ 69,90</p>
+                                <div class="cor2"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 unid.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+                </div>
+
+                <div class="fechar-pedido">
+                    <p>Subtotal: R$ 00,00</p>
+                    <a href="sacola.html">Fechar pedido agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="catalogo-colecoes-container">
+                <div class="catalogo-colecoes">
+                    <div class="colecoes-title">
+                        <h1><img src="img/colecoes-logo.png" alt="">Floral Atlântico</h1>
+                    </div>
+
+                    <div class="dropdown" style="margin-top: 110px;">
+                        <button class="filtrar" id="btn-filtrar">Filtrar <img src="img/seta-baixo.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div class="dropdown-content" id="dropdown-filtros" style="margin-top: 8px;">
+                    <div class="dropdown-espacamento">
+                        <div class="filtro">
+                            <h2>Preço</h2>
+                            <ul>
+                                <li><a href="#">Até R$50</a></li>
+                                <li><a href="#">R$50 a R$100</a></li>
+                                <li><a href="#">R$100 a R$150</a></li>
+                                <li><a href="#">R$150 a R$200</a></li>
+                                <li><a href="#">+ R$200,00</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filtro">
+                            <h2>Material</h2>
+
+                            <ul>
+                                <li><a href="#">Algodão</a></li>
+                                <li><a href="#">Poliéster</a></li>
+                                <li><a href="#">Linho</a></li>
+                                <li><a href="#">Lycra</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Crochê</a></li>
+                                <li><a href="#">Couro</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="filtro">
+                            <h2>Tamanhos</h2>
+
+                            <div class="medidas">
+                                <button class="medida-btn">PP</button>
+                                <button class="medida-btn">P</button>
+                                <button class="medida-btn">M</button>
+                                <button class="medida-btn">G</button>
+                                <button class="medida-btn">GG</button>
+                            </div>
+                        </div>
+
+                        <div class="filtro">
+                            <h2>Cores</h2>
+
+                            <ul class="dropdown-content-color" id="cor-ul"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="produtos-container" class="produtos-container"></div>
+            </div>
+        </section>
+
+        <!-- sobre a coleção -->
+        <section>
+            <div class="sobre-container catalogo-colecoes-container">
+                <div class="sobre">
+                    <div class="sobre-text">
+                        <h1>Sobre a Coleção...</h1>
+                        <p>Permita-se florescer com a energia vibrante das águas salgadas e o encanto das paisagens costeiras. A coleção Floral Atlântico nasce da fusão entre o frescor do oceano e a delicadeza da flora que cresce às suas margens. Inspirada nas flores resistentes que desabrocham mesmo em terrenos arenosos, a coleção traduz força e leveza em peças que acolhem o corpo com suavidade e naturalidade.
+
+                        A paleta de cores passeia entre os tons do mar profundo, os verdes vivos da vegetação litorânea e os nuances florais que brotam nos finais de tarde ensolarados. Cada estampa foi cuidadosamente criada para expressar a beleza orgânica das flores silvestres, com traços fluidos, sobreposições leves e composições harmônicas que revelam o equilíbrio entre natureza e design.                       
+                        <br><br>
+                        Vestidos frescos, batas, saias amplas, saídas de praia e biquínis compõem essa coleção que abraça a feminilidade em todas as suas formas. Os tecidos são respiráveis, suaves ao toque e pensados para acompanhar você nos dias de sol, nas caminhadas à beira-mar ou nos fins de tarde sob a sombra de uma árvore.
+
+                        Com modelagens versáteis, estampas autorais e detalhes que evocam a simplicidade encantadora da natureza, Floral Atlântico é mais que uma coleção — é um convite para florescer com liberdade, inspirar beleza e viver em sintonia com o ciclo natural das marés.</p>
+                    </div>
+
+                    <div class="sobre-img">
+                        <img src="img/capa-floral.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Cadastro-->
+        <section>
+            <hr>
+
+            <div class="cadastro-container">
+                <div class="cadastro">
+                    <div class="cadastro-text">
+                        <h3>Cadastre-se</h3>
+                        <p>Fique por dentro do que rola aqui e ganhe 25% de desconto na primeira compra no app!</p>
+                    </div>
+
+                    <div class="cadastro-add">
+                        <form>
+                            <input type="text" placeholder="Nome e sobrenome">
+                            <input type="email" placeholder="E-mail">
+                            <button type="submit"><a href="cadastro.html">Cadastrar-se</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="cadastro-container">
+                <div class="politica-cadastro cadastro">
+                    <p>Ao se cadastrar na Maresia, você concorda que seus dados pessoais serão tratados para oferecer
+                        uma experiência personalizada em nossa loja. O cadastro é restrito a maiores de 18 anos. Antes
+                        de prosseguir, recomendamos que leia nossa <a href="#">Política de Privacidade</a> para entender
+                        como suas
+                        informações são utilizadas e protegidas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-section1">
+                    <div class="icons-footer">
+                        <img src="img/imagotipoBranco.png" style="width: 170px;">
+                        <hr class="linha">
+                        <p>Uma marca que valoriza não apenas a elegância, mas também o conforto, oferecendo produtos
+                            sofisticados e de qualidade.</p>
+                    </div>
+                </div>
+
+                <div class="footer-section3">
+                    <div class="po">
+                        <h1 id="tittle-footer">Empresa</h1>
+                        <div id="phone"><a href="sobre.html">Contatos</a></div>
+                        <div id="phone"><a href="sobre.html">Sobre Nós</a></div>
+                        <div id="phone"><a href="sobre.html?secao=regulamento">Política Maresia</a></div>
+                    </div>
+                </div>
+
+                <div class="footer-section2">
+                    <div class="po2">
+                        <h1 id="tittle-footer">Serviços</h1>
+                        <div id="phone"><a href="cadastro.html">Cadastro</a></div>
+                        <div id="phone"><a href="colecoes.html">Coleções</a></div>
+                    </div>
+                </div>
+
+                <div class="footer-section4">
+                    <h2 id="tittle-footer">Nos siga em nossas<br>redes sociais!</h2>
+                    <hr class="linha2">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/LogoInstagram.png"
+                                style="width: 35px;"></a>
+                        <a href="https://x.com/i/flow/login" target="_blank"><img src="img/logoTwiter.png"
+                                style="width: 35px;"></a>
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR"
+                            target="_blank"><img src="img/LogoFacebook.png" style="width: 35px;"></a>
+                        <a href="https://br.pinterest.com/" target="_blank"><img src="img/logoPinterest.png"
+                                style="width: 35px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/floral-catalogo.js"></script>
+</body>
+
+</html>

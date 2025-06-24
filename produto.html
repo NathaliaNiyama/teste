@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto</title>
+
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/produto.css" />
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/filtros.css">
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+
+  <header>
+    <div class="topo">
+      <div class="logo">
+        <a href="index.html" aria-label="Página inicial">
+          <img src="img/maresia-logo-header.png" alt="Logo da loja" class="logo-foto">
+        </a>
+      </div>
+
+      <nav class="menu" aria-label="Menu principal">
+        <div class="menu-item">
+          <a href="colecoes.html" class="colecoes-link">Coleções</a>
+        </div>
+        <div class="menu-item">
+          <a href="#">Produtos</a>
+          <div class="submenu">
+            <ul>
+              <div class="ul-tittle"><a href="#">Saídas de praia</a></div>
+              <br>
+              <li><a href="produtos.html?categoria=vestido">Vestidos</a></li>
+              <li><a href="produtos.html?categoria=camiseta">Camisetas</a></li>
+              <li><a href="produtos.html?categoria=canga">Cangas</a></li>
+            </ul>
+
+            <ul>
+              <div class="ul-tittle"><a href="#">Peças de baixo</a></div>
+              <br>
+              <li><a href="produtos.html?categoria=short">Shorts</a></li>
+              <li><a href="produtos.html?categoria=saia">Saias</a></li>
+            </ul>
+
+            <ul>
+              <div class="ul-tittle"><a href="#">Trajes de banho</a></div>
+              <br>
+              <li><a href="produtos.html?categoria=biquini">Biquínis</a></li>
+              <li><a href="produtos.html?categoria=maio">Maiôs</a></li>
+            </ul>
+
+            <ul>
+              <div class="ul-tittle"><a href="#">Calçados</a></div>
+              <br>
+              <li><a href="produtos.html?categoria=sandalia">Sandálias</a></li>
+              <li><a href="produtos.html?categoria=chinelo">Chinelos</a></li>
+            </ul>
+
+            <ul>
+              <div class="ul-tittle"><a href="#">Adereços</a></div>
+              <br>
+              <li><a href="produtos.html?categoria=sombrinha">Sombrinhas</a></li>
+              <li><a href="produtos.html?categoria=bolsa">Bolsas</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Sobre a Maresia</a>
+          <div class="submenu">
+            <ul>
+              <div class="ul-tittle"><a href="sobre.html">Veja tudo ></a></div>
+              <br>
+              <li><a href="sobre.html?secao=nossaHistoria">Nossa história</a></li>
+              <li><a href="sobre.html?secao=regulamento">Política Maresia</a></li>
+              <li><a href="sobre.html?secao=freteGratis">Frete grátis</a></li>
+            </ul>
+
+            <div class="logo-ul"><img src="img/icon.png" alt=""></div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="acoes">
+        <a href="perfil.html" aria-label="Entrar na conta">
+          <img src="img/conta-white.png" alt="Ícone de conta" class="icone-conta">
+        </a>
+        <a href="cadastro.html" class="texto-entrar">Entrar</a>
+
+        <!-- Ícone da sacola que abre o menu lateral -->
+        <button onclick="abrirMenu()">
+          <img src="img/sacola-de-compras-white.png" alt="Carrinho de compras" class="icone-carrinho">
+        </button>
+      </div>
+
+      <div id="overlay" class="overlay"></div>
+
+      <div id="menuLateral" class="menu-lateral">
+        <div class="itens">
+          <div class="item">
+            <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+            <div class="detalhes-item">
+              <div class="detalhes-produto">
+                <h1>Vestido saída floral</h1>
+                <p>R$ 159,90</p>
+                <p class="medida">P</p>
+                <div class="cor"></div>
+              </div>
+
+              <div class="quantidade">
+                <button>-</button>
+                <p>1 uni.</p>
+                <button>+</button>
+              </div>
+            </div>
+            <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+          </div>
+
+          <div class="item">
+            <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+            <div class="detalhes-item">
+              <div class="detalhes-produto">
+                <h1>Canga Estampada</h1>
+                <p>R$ 69,90</p>
+                <div class="cor2"></div>
+              </div>
+
+              <div class="quantidade">
+                <button>-</button>
+                <p>1 uni.</p>
+                <button>+</button>
+              </div>
+            </div>
+            <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+          </div>
+        </div>
+
+        <div class="fechar-pedido">
+          <p>Subtotal: R$ 00,00</p>
+          <a href="sacola.html">Fechar pedido agora</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="productcontainer">
+    <div class="product">
+      <div class="productimages">
+        <div class="imgbar">
+          <img src="img/vestido-saida-de-praia-branca.png" class="navimg" onclick="setImage(0)" />
+          <img src="img/vestido-saida-de-praia-branca.png" class="navimg" onclick="setImage(1)" />
+          <img src="img/vestido-saida-de-praia-branca.png" class="navimg" onclick="setImage(2)" />
+          <img src="img/vestido-saida-de-praia-branca.png" class="navimg" onclick="setImage(3)" />
+        </div>
+        <div class="mainimg">
+          <button class="arrow left" onclick="prevImage()"><img src="img/seta-baixo.png" alt=""></button>
+          <img id="displayimg" src="img/vestido-saida-de-praia-branca.png" />
+          <button class="arrow right" onclick="nextImage()"><img src="img/seta-baixo.png" alt=""></button>
+        </div>
+      </div>
+
+      <div class="productinfo">
+        <div class="product-links">
+          <a href="#">Início</a> - <a href="#">Produtos</a>: <span><a href="#">Blusas</a></span>
+        </div>
+        <h1>Nome do produto</h1>
+        <p class="price">R$ 00,00</p>
+        <p class="tranche">Ou X vezes de R$ 00,00 sem juros</p>
+        <p class="description">
+          Vestido curto estampado tigres. Feito em tecido leve e fluido, possui
+          corte moderno e manga longa, ideal para deixar seu look casual com um
+          toque único. O decote em V e a cintura ajustada com elástico asseguram
+          conforto e estilo em qualquer ocasião. Perfeito para encontros ou
+          passeios descontraídos. FARM RIO original - alto inverno 25.
+        </p>
+
+        <div class="colorsizesection">
+          <div class="sizesection">
+            <h2>Tamanhos</h2>
+
+            <div class="medidas">
+              <button class="medida-btn">PP</button>
+              <button class="medida-btn">P</button>
+              <button class="medida-btn">M</button>
+              <button class="medida-btn">G</button>
+              <button class="medida-btn" id="gg">GG</button>
+            </div>
+          </div>
+
+          <div class="colorsection">
+            <h2>Cores</h2>
+            <div class="coloroptions">
+              <div class="colorbutton"></div>
+              <div class="colorbutton"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buttoncontainer">
+          <button class="buybutton">Comprar agora</button>
+          <button class="cartbutton">Adicionar na sacola</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="avaliacoes-container">
+    <div class="avaliacoes">
+      <div class="avaliacoes-title">
+        <hr>
+        <h2>Avaliações</h2>
+        <hr>
+      </div>
+
+      <div class="media-geral-container">
+        <div class="media-geral">
+          <h1 class="nota">5.0</h1>
+          <div class="estrelas"><img src="img/estrelas-logo.png" alt=""></div>
+          <p class="total-avaliacoes">Total de avaliações: 5</p>
+        </div>
+      </div>
+
+      <div id="container-avaliacoes"></div>
+
+      <button id="btn-ver-mais"><img src="img/seta-baixo.png" alt=""></button>
+    </div>
+  </section>
+
+  <!--Veja mais produtos-->
+  <section>
+    <div class="mais-produtos-container">
+      <div class="mais-produtos">
+        <h1>Veja mais produtos</h1>
+      </div>
+      <div id="produtos-container" class="produtos"></div>
+    </div>
+  </section>
+
+  <!--Cadastro-->
+  <section>
+    <hr>
+
+    <div class="cadastro-container">
+      <div class="cadastro">
+        <div class="cadastro-text">
+          <h3>Cadastre-se</h3>
+          <p>Fique por dentro do que rola aqui e ganhe 25% de desconto na primeira compra no APP!</p>
+        </div>
+
+        <div class="cadastro-add">
+          <form>
+            <input type="text" placeholder="Nome e sobrenome">
+            <input type="email" placeholder="E-mail">
+            <button type="submit"><a href="cadastro.html">Cadastrar-se</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cadastro-container">
+      <div class="politica-cadastro cadastro">
+        <p>Ao se cadastrar na MARESIA, você concorda que seus dados pessoais serão tratados para oferecer
+          uma experiência personalizada em nossa loja. O cadastro é restrito a maiores de 18 anos. Antes
+          de prosseguir, recomendamos que leia nossa <a href="#">Política de Privacidade</a> para entender
+          como suas
+          informações são utilizadas e protegidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-sections">
+        <div class="footer-section1">
+          <div class="icons-footer">
+            <img src="img/imagotipoBranco.png" style="width: 170px;">
+            <hr class="linha">
+            <p>Uma marca que valoriza não apenas a elegância, mas também o conforto, oferecendo produtos
+              sofisticados e de qualidade.</p>
+          </div>
+        </div>
+
+        <div class="footer-section3">
+          <div class="po">
+            <h1 id="tittle-footer">Empresa</h1>
+            <div id="phone"><a href="sobre.html">Contatos</a></div>
+            <div id="phone"><a href="sobre.html">Sobre nós</a></div>
+            <div id="phone"><a href="sobre.html?secao=regulamento">Política Maresia</a></div>
+          </div>
+        </div>
+
+        <div class="footer-section2">
+          <div class="po2">
+            <h1 id="tittle-footer">Serviços</h1>
+            <div id="phone"><a href="cadastro.html">Cadastro</a></div>
+            <div id="phone"><a href="colecoes.html">Coleções</a></div>
+          </div>
+        </div>
+
+        <div class="footer-section4">
+          <h2 id="tittle-footer">Nos siga em nossas<br>Redes Sociais!</h2>
+          <hr class="linha2">
+          <div class="social-media">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/LogoInstagram.png"
+                style="width: 35px;"></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><img src="img/logoTwiter.png" style="width: 35px;"></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR"
+              target="_blank"><img src="img/LogoFacebook.png" style="width: 35px;"></a>
+            <a href="https://br.pinterest.com/" target="_blank"><img src="img/logoPinterest.png"
+                style="width: 35px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/header.js"></script>
+  <script src="js/produto.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+
+</html>

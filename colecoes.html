@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleções</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/colecoes.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <a href="index.html" aria-label="Página inicial">
+                    <img src="img/maresia-logo-header.png" alt="Logo da loja" class="logo-foto">
+                </a>
+            </div>
+
+            <nav class="menu" aria-label="Menu principal">
+                <div class="menu-item">
+                    <a href="colecoes.html" class="colecoes-link">Coleções</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Produtos</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Saídas de praia</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=vestido">Vestidos</a></li>
+                            <li><a href="produtos.html?categoria=camiseta">Camisetas</a></li>
+                            <li><a href="produtos.html?categoria=canga">Cangas</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Peças de baixo</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=short">Shorts</a></li>
+                            <li><a href="produtos.html?categoria=saia">Saias</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Trajes de banho</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=biquini">Biquínis</a></li>
+                            <li><a href="produtos.html?categoria=maio">Maiôs</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Calçados</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sandalia">Sandálias</a></li>
+                            <li><a href="produtos.html?categoria=chinelo">Chinelos</a></li>
+                        </ul>
+
+                        <ul>
+                            <div class="ul-tittle"><a href="#">Adereços</a></div>
+                            <br>
+                            <li><a href="produtos.html?categoria=sombrinha">Sombrinhas</a></li>
+                            <li><a href="produtos.html?categoria=bolsa">Bolsas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">Sobre a Maresia</a>
+                    <div class="submenu">
+                        <ul>
+                            <div class="ul-tittle"><a href="sobre.html">Veja Tudo ></a></div>
+                            <br>
+                            <li><a href="sobre.html?secao=nossaHistoria">Nossa História</a></li>
+                            <li><a href="sobre.html?secao=regulamento">Política Maresia</a></li>
+                            <li><a href="sobre.html?secao=freteGratis">Frete Grátis</a></li>
+                        </ul>
+
+                        <div class="logo-ul"><img src="img/icon.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="acoes">
+                <a href="perfil.html" aria-label="Entrar na conta">
+                    <img src="img/conta-white.png" alt="Ícone de conta" class="icone-conta">
+                </a>
+                <a href="cadastro.html" class="texto-entrar">Entrar</a>
+
+                <!-- Ícone da sacola que abre o menu lateral -->
+                <button onclick="abrirMenu()">
+                    <img src="img/sacola-de-compras-white.png" alt="Carrinho de compras" class="icone-carrinho">
+                </button>
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+
+            <div id="menuLateral" class="menu-lateral">
+                <div class="itens">
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Vestido Saída Floral</h1>
+                                <p>R$ 159,90</p>
+                                <p class="medida">P</p>
+                                <div class="cor"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 uni.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/vestido-saida-de-praia-branca.png" alt="Vestido saída floral">
+                        <div class="detalhes-item">
+                            <div class="detalhes-produto">
+                                <h1>Canga Estampada</h1>
+                                <p>R$ 69,90</p>
+                                <div class="cor2"></div>
+                            </div>
+
+                            <div class="quantidade">
+                                <button>-</button>
+                                <p>1 uni.</p>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="excluir"><img src="img/lixeira-logo.png" alt="Excluir"></button>
+                    </div>
+                </div>
+
+                <div class="fechar-pedido">
+                    <p>Subtotal: R$ 00,00</p>
+                    <a href="sacola.html">Fechar Pedido Agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="colecoes-title">
+            <h1>Coleções</h1>
+            <hr>
+        </div>
+        
+        <div class="colecoes-conteiner">
+            <div class="colecoes">
+                <div class="colecao-item">
+                    <a href="mare-serena.html"><img src="img/colecao1.png" alt="Capa Maré Serena"></a>
+                    <div class="overlay2">
+                        <a href="mare-serena.html">Maré Serena</a>
+                    </div>
+                </div>
+                <div class="colecao-item">
+                    <a href="#"><img src="img/colecao2.png" alt="Capa Floral Atlântico"></a>
+                    <div class="overlay2">
+                        <a href="floral-atlantico.html">Floral Atlântico</a>
+                    </div>
+                </div>
+                <div class="colecao-item">
+                    <a href="#"><img src="img/colecoes4.png" alt="Capa Ecos do Mar"></a>
+                    <div class="overlay2">
+                        <a href="ecos.html">Ecos do Mar</a>
+                    </div>
+                </div>
+                <div class="colecao-item">
+                    <a href="#"><img src="img/colecao3.png" alt="Capa Pérola Salgada"></a>
+                    <div class="overlay2">
+                        <a href="perola.html">Pérola Salgada</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/header.js"></script>
+</body>
+
+</html>

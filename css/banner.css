@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background-color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slide-text {
+  position: relative; /* relativo ao slide */
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 3px 4px 9px rgba(0,0,0,0.7);
+  z-index: 2;
+  pointer-events: none; /* para não atrapalhar cliques */
+  user-select: none;    /* para não permitir seleção do texto */
+  text-align: center;
+  max-width: 100%;
+  font-family: 'Cinzel', serif;
+}
+
+.slide a{
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+#colecao2-text {
+  color: rgb(255, 252, 80);
+  font-family: 'Allura', cursive;
+  font-size: 84px;
+}
+
+#colecao3-text {
+  color:rgb(18, 35, 35);
+  font-family: 'Cinzel', serif;
+  font-size: 57px;
+}
+
+#colecao4-text {
+  color: #fff;
+  font-family: 'Allura', cursive;
+  font-size: 84px;
+}
+
+.progress-bar-container {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  width: fit-content;
+  z-index: 10;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: white;
+  width: 0%;
+  transition: width 5000ms linear;
+  /* A animação padrão */
+}
+
+.progress-bar.active::before {
+  width: 100%;
+  /* A barra ativa vai preencher com 100% */
+  /* transition: width 5000ms linear; */
+  /* Inicia a animação */
+}
+
+.progress-bar.reset::before {
+  width: 0%;
+  /* Reseta o width */
+  transition: none;
+  /* Remove a animação */
+}
+
+/* .progress-bar.active::before {
+    width: 100%;
+  }
+   */
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 2.5rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  z-index: 20;
+  border-radius: 100%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.359);
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.prev-btn img, .next-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.next-btn {
+  right: 15px;
+}
